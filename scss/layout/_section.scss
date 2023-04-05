@@ -1,0 +1,58 @@
+.section-about {
+    max-width: 68.75rem;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    &__skills {
+        width: 300px;
+        height: 300px;
+        margin: 100px 0;
+        border-radius: 7px;
+        background-color: $color-bg-primary;
+    }
+
+    &__profile {
+        width: 300px;
+        height: 300px;
+        margin: 100px 0;
+        border-radius: 7px;
+        background-color: $color-bg-primary;
+    }
+}
+
+.section-timeline {
+    max-width: 68.75rem;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    &__line {
+        width: 300px;
+        height: 300px;
+        margin: 100px 0;
+        border-radius: 7px;
+        background-color: $color-bg-primary;
+    }
+}
+
+.section-projects {
+    max-width: 68.75rem;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    &__project {
+        width: 300px;
+        height: 300px;
+        margin: 100px 0;
+        border-radius: 7px;
+        background-color: $color-bg-primary;
+    }
+}
