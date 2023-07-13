@@ -7,111 +7,20 @@
     justify-content: space-between;
 
     &__logo {
-        font-size: .9375em;
-        font-weight: bold;
+        font: bold .9375em $font-family-secondary;
         color: $color-tx-tertiary;
         text-shadow: 0 0 .3125rem $color-tx-tertiary;
-        margin-left: 2.5rem;
     }
 
-    &__menu {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 3.3rem 0;
-
-        li {
-            margin: 0 1.25rem;
-        }
+    &__tools {
+        margin: 1.875rem;
 
         a {
-            font-size: .75em;
-            font-weight: bold;
-            color: $color-tx-primary;
-            transition: 0.5s;
-
-            &:hover {
-                color: $color-tx-tertiary;
-            }
-
-            &::before {
-                content: "< ";
-                visibility: hidden;
-            }
-
-            &:hover::before {
-                visibility: visible;
-            }
-
-            &::after {
-                content: " >";
-                visibility: hidden;
-            }
-
-            &:hover::after {
-                visibility: visible;
-            }
-        }
-    }
-
-    &__social {
-        display: flex;
-        align-items: center;
-
-        a {
-            display: flex;
-            align-items: center;
-            font-size: .74em;
-            font-family: $font-family;
-            color: $color-tx-secondary;
-            margin-right: 1.875rem;
+            margin-left: .625rem;
         }
 
         img {
-            margin-right: .625rem;
-        }
-    }
-}
-
-.header-content {
-    max-width: 68.75rem;
-    margin: 0 auto;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-
-    &__intro {
-        width: 25rem;
-
-        h2 {
-            width: 8.25rem;
-            padding: 0 .9375rem;
-            margin-bottom: 1.5625rem;
-            border-radius: .3125rem;
-            font-size: .8125em;
-            font-weight: normal;
-            background-color: $color-tx-tertiary;
-        }
-
-        h1 {
-            color: $color-tx-primary;
-        }
-
-        h3 {
-            margin-top: 2.1875rem;
-            font-size: .8125em;
-            color: $color-tx-secondary;
-        }
-    }
-
-    &__profile {
-        width: 28.125rem;
-        margin: 2.5rem 0 0;
-
-        img {
-            filter: brightness(0%);
-            width: 32.4375rem;
+            width: 1.3125rem;
         }
     }
 }

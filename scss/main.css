@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -16,11 +17,15 @@ html {
 }
 
 header {
-  background-color: #2d2e32;
+  background-color: #2D2E32;
 }
 
 main {
-  background-color: #25262a;
+  background-color: #2D2E32;
+}
+
+footer {
+  background-color: #2D2E32;
 }
 
 .header-navbar {
@@ -31,144 +36,67 @@ main {
   justify-content: space-between;
 }
 .header-navbar__logo {
-  font-size: 0.9375em;
-  font-weight: bold;
-  color: #5eeaa6;
-  text-shadow: 0 0 0.3125rem #5eeaa6;
-  margin-left: 2.5rem;
+  font: bold 0.9375em "Roboto Mono", monospace;
+  color: #5EEAA6;
+  text-shadow: 0 0 0.3125rem #5EEAA6;
 }
-.header-navbar__menu {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 3.3rem 0;
+.header-navbar__tools {
+  margin: 1.875rem;
 }
-.header-navbar__menu li {
-  margin: 0 1.25rem;
+.header-navbar__tools a {
+  margin-left: 0.625rem;
 }
-.header-navbar__menu a {
-  font-size: 0.75em;
-  font-weight: bold;
-  color: #f5f5f5;
-  transition: 0.5s;
-}
-.header-navbar__menu a:hover {
-  color: #5eeaa6;
-}
-.header-navbar__menu a::before {
-  content: "< ";
-  visibility: hidden;
-}
-.header-navbar__menu a:hover::before {
-  visibility: visible;
-}
-.header-navbar__menu a::after {
-  content: " >";
-  visibility: hidden;
-}
-.header-navbar__menu a:hover::after {
-  visibility: visible;
-}
-.header-navbar__social {
-  display: flex;
-  align-items: center;
-}
-.header-navbar__social a {
-  display: flex;
-  align-items: center;
-  font-size: 0.74em;
-  font-family: "Roboto", sans-serif;
-  color: #78797d;
-  margin-right: 1.875rem;
-}
-.header-navbar__social img {
-  margin-right: 0.625rem;
+.header-navbar__tools img {
+  width: 1.3125rem;
 }
 
-.header-content {
+.main-container {
   max-width: 68.75rem;
   margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
 }
-.header-content__intro {
-  width: 25rem;
-}
-.header-content__intro h2 {
-  width: 8.25rem;
-  padding: 0 0.9375rem;
-  margin-bottom: 1.5625rem;
-  border-radius: 0.3125rem;
-  font-size: 0.8125em;
-  font-weight: normal;
-  background-color: #5eeaa6;
-}
-.header-content__intro h1 {
-  color: #f5f5f5;
-}
-.header-content__intro h3 {
-  margin-top: 2.1875rem;
-  font-size: 0.8125em;
-  color: #78797d;
-}
-.header-content__profile {
-  width: 28.125rem;
-  margin: 2.5rem 0 0;
-}
-.header-content__profile img {
-  filter: brightness(0%);
-  width: 32.4375rem;
-}
-
-.section-about {
-  max-width: 68.75rem;
-  margin: 0 auto;
+.main-container__social {
   display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+  flex-direction: column;
+  margin: 60px;
 }
-.section-about__skills {
-  width: 300px;
-  height: 300px;
-  margin: 100px 0;
-  border-radius: 7px;
-  background-color: #2d2e32;
+.main-container__social a {
+  margin: 12px;
 }
-.section-about__profile {
-  width: 300px;
-  height: 300px;
-  margin: 100px 0;
-  border-radius: 7px;
-  background-color: #2d2e32;
+.main-container__social img {
+  width: 30px;
 }
-
-.section-timeline {
-  max-width: 68.75rem;
-  margin: 0 auto;
+.main-container__about {
+  margin: 100px 300px 200px 10px;
+}
+.main-container__about .about-title {
   display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+  align-items: end;
 }
-.section-timeline__line {
-  width: 300px;
-  height: 300px;
-  margin: 100px 0;
-  border-radius: 7px;
-  background-color: #2d2e32;
+.main-container__about .about-title img {
+  width: 110px;
+  margin-bottom: 8px;
 }
-
-.section-projects {
-  max-width: 68.75rem;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+.main-container__about .about-title__text {
+  margin-left: 44px;
 }
-.section-projects__project {
-  width: 300px;
-  height: 300px;
-  margin: 100px 0;
-  border-radius: 7px;
-  background-color: #2d2e32;
+.main-container__about .about-title__text h2 {
+  color: #2D2E32;
+  font: bold 23px "Inter", sans-serif;
+  background-color: #5EEAA6;
+  border-radius: 3px;
+  margin-right: 230px;
+  text-align: center;
+}
+.main-container__about .about-title__text h1 {
+  color: #F5F5F5;
+  font: bold 38px "Inter", sans-serif;
+}
+.main-container__about .about-content p {
+  margin-top: 30px;
+  margin-left: 12px;
+  text-align: justify;
+  color: #F5F5F5;
+  font: normal 15px "Inter", sans-serif;
 }/*# sourceMappingURL=main.css.map */
