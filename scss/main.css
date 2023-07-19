@@ -114,6 +114,7 @@ footer {
   text-align: center;
 }
 .main-container__about .about-content__title h1 {
+  margin-top: 7px;
   color: #F5F5F5;
   font: bold 2.375em "Inter", sans-serif;
 }
