@@ -15,12 +15,20 @@
     &__tools {
         margin: 1.875rem;
 
-        a {
-            margin-left: .625rem;
+        .tool {
+            background-color: $color-bg-primary;
+            width: 1.25rem;
+            margin-left: .75rem;
+            cursor: pointer;
         }
 
-        img {
-            width: 1.3125rem;
+        .fa-solid  {
+            color: $color-tx-primary;
+            transition: 0.5s;
+
+            &:hover {
+                color: $color-tx-tertiary;
+            }
         }
     }
 }
