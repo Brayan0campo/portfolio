@@ -1,65 +1,104 @@
 .main-container {
     max-width: 68.75rem;
     margin: 0 auto;
-
+    padding-top: 70px;
     display: flex;
     align-items: center;
-
 
     &__social {
         display: flex;
         flex-direction: column;
-        margin: 60px;
+
+        margin-left: 180px;
+        margin-right: 50px;
 
         a {
-            margin: 12px;
-        }
+            margin: .875rem;
+            color: $color-tx-secondary;
+            transition: 0.5s;
 
-        img {
-            width: 30px;
+            &:hover {
+                color: $color-tx-tertiary;
+                transform: scale(1.1);
+            }
         }
     }
 
     &__about {
-        margin: 100px 300px 200px 10px;
+        display: flex;
+        align-items: center;
 
-        .about-title {
+        .about-content {
             display: flex;
-            align-items: end;
+            flex-direction: column;
 
-            img {
-                width: 110px;
-                margin-bottom: 8px;
+            &__tools {
+                margin-top: 20px;
+                margin-left: 27px;
+
+                i {
+                    margin-right: 22px;
+                }
             }
 
-            &__text {
-                margin-left: 44px;
+            &__title {
+                display: flex;
+                align-items: center;
+
+                img {
+                    width: 6.875rem;
+                    margin-right: 20px;
+                    background-color: rgb(109, 109, 109);
+                    border-radius: 5px;
+                }
 
                 h2 {
                     color: $color-bg-primary;
                     font: bold 23px $font-family-primary;
                     background-color: $color-tx-tertiary;
-                    border-radius: 3px;
-                    margin-right: 230px;
+                    border-radius: 4px;
+                    margin-right: 240px;
                     text-align: center;
                 }
 
                 h1 {
                     color: $color-tx-primary;
-                    font: bold 38px $font-family-primary;
+                    font: bold 2.375em $font-family-primary;
+                }
+            }
+
+            &__text {
+                p {
+                    font: lighter .9375em $font-family-primary;
+                    color: $color-tx-primary;
+                    text-align: justify;
+                    margin-top: 25px;
+                    margin-right: 247px;
+                }
+            }
+
+            &__contact {
+                margin-top: 30px;
+                margin-bottom: 30px;
+
+                p {
+                    font: bold .9375em $font-family-primary;
+                    color: $color-tx-primary;
                 }
             }
         }
+    }
+}
 
-        .about-content {
+.footer-container {
+    max-width: 68.75rem;
+    margin: 0 auto;
 
-            p {
-                margin-top: 30px;
-                margin-left: 12px;
-                text-align: justify;
-                color: $color-tx-primary;
-                font: normal 15px $font-family-primary;
-            }
-        }
+    p {
+        padding-top: 100px;
+        padding-bottom: 50px;
+        text-align: center;
+        font: bold .9375em $font-family-primary;
+        color: $color-tx-primary;
     }
 }
