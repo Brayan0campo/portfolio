@@ -12,9 +12,9 @@
 
     background-image: linear-gradient(to bottom, $clr-bg 50%, transparent);
     background-color: $clr-bg-90;
-    border-bottom: 1px solid $clr-gray-alt;
+    border-bottom: .0625rem solid $clr-gray-alt;
 
-    &__logo {
+    &__title {
         font: bold 1em $ff-title;
         color: $clr-details;
         text-shadow: 0 0 .1rem $clr-details;
@@ -26,8 +26,8 @@
         gap: 2rem;
     }
 
-    &__tools > .theme-button,
-    &__tools > .language-button {
+    &__tools>.theme-button,
+    &__tools>.language-switch {
         border: 0;
         background-color: transparent;
         color: $clr-text;
