@@ -83,7 +83,17 @@
                     background-color: $clr-details;
                     color: $clr-bg;
                     border-radius: 3px;
-                    padding: 0 .6rem;
+                    padding: 0 .4rem;
+                    transition: 0.6s;
+
+                    &::selection {
+                        background-color: $clr-text;
+                    }
+
+                    &:hover {
+                        background-color: $clr-bg;
+                        color: $clr-details;
+                    }
                 }
             }
 
