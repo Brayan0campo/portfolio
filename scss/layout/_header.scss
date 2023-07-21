@@ -1,36 +1,42 @@
-.header-navbar {
-    max-width: 68.75rem;
-    margin: 0 auto;
+.main-header {
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    padding: 1rem 1.5rem;
 
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+
+    background-image: linear-gradient(to bottom, $clr-bg 50%, transparent);
+    background-color: $clr-bg-90;
+    border-bottom: 1px solid $clr-gray-alt;
 
     &__logo {
-        font: bold .9375em $font-family-secondary;
-        color: $color-tx-tertiary;
-        text-shadow: 0 0 .3125rem $color-tx-tertiary;
-        margin-left: .875rem;
-
+        font: bold 1em $ff-title;
+        color: $clr-details;
+        text-shadow: 0 0 .1rem $clr-details;
     }
 
     &__tools {
-        margin: 1.875rem;
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
 
-        .tool {
-            background-color: $color-bg-primary;
-            width: 1.25rem;
-            margin-left: .75rem;
-            cursor: pointer;
-        }
+    &__tools > .theme-button,
+    &__tools > .language-button {
+        border: 0;
+        background-color: transparent;
+        color: $clr-text;
+        font-size: 0.9rem;
+        transition: 0.5s;
+        cursor: pointer;
 
-        .fa-solid  {
-            color: $color-tx-primary;
-            transition: 0.5s;
-
-            &:hover {
-                color: $color-tx-tertiary;
-            }
+        &:hover {
+            color: $clr-details;
         }
     }
 }
