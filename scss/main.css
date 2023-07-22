@@ -1,21 +1,10 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;400;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap');
-*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;800&display=swap");
 /* VARIABLES */
-/* VARIABLES LIGHT */
-[data-theme=light] {
-  --clr-bg: #ececec;
-  --clr-bg-90: #ececece6;
-  --clr-text: #1c1c1c;
-  --clr-gray: #bababa;
-  --clr-gray-alt: #e0e0e0;
-  --clr-details: #5EEAA6;
-}
-
 :root {
   scroll-behavior: smooth;
 }
@@ -101,6 +90,46 @@ body {
   background-image: linear-gradient(to bottom, #1C1C1C 50%, transparent);
   background-color: rgba(28, 28, 28, 0.9019607843);
   border-bottom: 0.0625rem solid #2D2D2D;
+}
+.main-header__nav {
+  display: flex;
+  align-items: center;
+  gap: 13rem;
+}
+.main-header__nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.main-header__nav ul > li > a {
+  font: bold 0.875rem "Roboto Mono", sans-serif;
+  color: #F5F5F5;
+  font-weight: bold;
+  transition: color 0.2s;
+  display: flex;
+}
+.main-header__nav ul > li > a::before {
+  content: "<";
+  color: #606060;
+  display: inline-block;
+  transition: color 0.2s, transform 0.1s 0.2s;
+}
+.main-header__nav ul > li > a::after {
+  content: "/>";
+  color: #606060;
+  display: inline-block;
+  transition: color 0.2s, transform 0.1s 0.2s;
+}
+.main-header__nav ul > li > a:hover {
+  color: #5EEAA6;
+}
+.main-header__nav ul > li > a:hover::before {
+  color: #5EEAA6;
+  transform: translateX(-0.5rem);
+}
+.main-header__nav ul > li > a:hover::after {
+  color: #5EEAA6;
+  transform: translateX(0.5rem);
 }
 .main-header__title {
   font: bold 1em "Unbounded", sans-serif;
@@ -232,16 +261,29 @@ body {
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin-left: 4.9375rem;
+  margin-left: 75px;
 }
 .main-container__social a {
-  margin: 0.875rem;
+  margin: 16px;
   color: #F5F5F5;
   transition: 0.5s;
 }
 .main-container__social a:hover {
   color: #5EEAA6;
   transform: scale(1.1);
+}
+.main-container__social #notion {
+  color: #1C1C1C;
+  background-color: #F5F5F5;
+  border-radius: 0.125rem;
+  font-size: 1.4375rem;
+  font-weight: bold;
+  width: 1.8125rem;
+  margin-left: 1.125rem;
+}
+.main-container__social #notion:hover {
+  color: #1C1C1C;
+  background-color: #5EEAA6;
 }
 
 .spinner {
@@ -271,4 +313,15 @@ body {
   100% {
     transform: rotate(360deg);
   }
+}
+
+.footer-container {
+  max-width: 62.5rem;
+  margin: 0 auto;
+}
+.footer-container p {
+  margin: 1.25rem 0;
+  text-align: center;
+  font: bold 0.8125rem "Unbounded", sans-serif;
+  color: #606060;
 }/*# sourceMappingURL=main.css.map */

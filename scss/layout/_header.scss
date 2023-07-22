@@ -14,6 +14,54 @@
     background-color: $clr-bg-90;
     border-bottom: .0625rem solid $clr-gray-alt;
 
+    &__nav {
+        display: flex;
+        align-items: center;
+        gap: 13rem;
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+
+        ul>li>a {
+            font: bold .875rem $ff-roboto;
+            color: $clr-text;
+            font-weight: bold;
+            transition: color .2s;
+            display: flex;
+
+            &::before {
+                content: '<';
+                color: $clr-gray;
+                display: inline-block;
+                transition: color .2s, transform .1s .2s;
+            }
+
+            &::after {
+                content: '/>';
+                color: $clr-gray;
+                display: inline-block;
+                transition: color .2s, transform .1s .2s;
+            }
+
+            &:hover {
+                color: $clr-details;
+
+                &::before {
+                    color: $clr-details;
+                    transform: translateX(-.5rem);
+                }
+
+                &::after {
+                    color: $clr-details;
+                    transform: translateX(.5rem);
+                }
+            }
+        }
+    }
+
     &__title {
         font: bold 1em $ff-title;
         color: $clr-details;

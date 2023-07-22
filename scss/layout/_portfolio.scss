@@ -1,0 +1,11 @@
+.footer-container {
+    max-width: 62.5rem;
+    margin: 0 auto;
+
+    p {
+        margin: 1.25rem 0;
+        text-align: center;
+        font: bold .8125rem $ff-title;
+        color: $clr-gray;
+    }
+}

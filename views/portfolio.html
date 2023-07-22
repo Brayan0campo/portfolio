@@ -11,108 +11,71 @@
 </head>
 
 <body>
-    <div id="spinner2" aria-hidden="true"><i class="fa-solid fa-code"></i></div>
 
     <header class="main-header" aria-label="Encabezado">
         <nav class="main-header__nav">
-            <a class="main-header__title" href="./index.html">Brayan | Ocampo</a>
+            <a class="main-header__title" href="../index.html" draggable="false">Brayan | Ocampo</a>
+            <ul>
+                <li><a href="#about-me" aria-label="Sobre mí">sobre mí</a></li>
+                <li><a href="#portfolio" aria-label="Portfolio">portfolio</a></li>
+                <li><a href="#career" aria-label="Experiencia">experiencia</a></li>
+                <li><a href="#contact" aria-label="Contacto">contacto</a></li>
+            </ul>
         </nav>
         <div class="main-header__tools">
-            <a class="language-switch" href="./en" data-tooltip="Switch to English" data-tooltip-bottom
-                aria-label="Switch to English"><i class="fa-solid fa-earth-americas fa-lg"></i></a>
-            <button class="theme-button" data-tooltip="Tema" data-tooltip-bottom aria-label="Color de pagina"><i
-                    class="fa-solid fa-circle-half-stroke fa-lg"></i></button>
+            <a class="language-switch" href="./en" draggable="false" data-tooltip="Switch to English" data-tooltip-bottom aria-label="Switch to English"><i class="fa-solid fa-earth-americas fa-lg"></i></a>
+            <button class="theme-button" aria-hidden="true" data-tooltip="Tema" data-tooltip-bottom aria-label="Color de pagina"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></button>
         </div>
     </header>
 
     <main aria-label="Contenido principal">
-        <section aria-label="Introducción" id="hero" class="hero">
-            <div class="container">
-                <div class="hero-inner">
-                    <div class="hero-inner-content">
-                        <div class="rellax-not-centered hero-image-container" data-rellax-speed="4"
-                            data-rellax-xs-speed="0" data-rellax-mobile-speed="1" data-rellax-tablet-speed="1">
-                            <div class="hero-image">
-                                <img src="./img/carpi-foto.png" alt="Carpi sonriendo">
+       <!--  <section aria-label="Introducción">
+            <div class="main-container">
+                <div class="main-container__content">
+                    <div class="main-content">
+                        <div class="main-content__image">
+                            <div class="content-image">
+                                <img src="./assets/images/img-perfil1.webp" draggable="false" alt="Imagen de perfil">
                             </div>
                         </div>
-                        <div class="hero-main rellax-not-centered" data-rellax-speed="-2">
-                            <h1 class="main-title">Matías Coletta</h1>
-                            <p class="hero-title">Soy Carpi <span aria-hidden="true" class="wave">👋</span></p>
-                            <p class="hero-subtitle">Desarrollador Frontend</p>
-                            <p class="paragraph">
-                                Nacido en <span class="flag" aria-hidden="true">🇦🇷</span> Argentina y viviendo en
-                                <span class="flag" aria-hidden="true">🇪🇸</span> España, en busca de nuevos desafíos y
-                                experiencias.
+                        <div class="main-content__about">
+                            <p class="content-intro">¡Hola! Bienvenido</p>
+                            <p class="content-subtitle">Soy Brayan </p>
+                            <h1 class="content-title">Desarrollador Frontend /></h1>
+                            <p class="content-description">
+                                ¡Ingeniero de Software en constante ascenso! Amante del aprendizaje y el crecimiento
+                                profesional. Domino HTML, CSS, JavaScript, React Js, Git, SQL y metodologías como Scrum.
+                                Espíritu colaborativo, resiliente ante la presión. ¡Dispuesto a llevar tu equipo a
+                                nuevas alturas!. Conoce mas en mi { portafolio }
                             </p>
-                            <p class="paragraph">
-                                Actualmente estoy dando clases en la academia digital Coderhouse y creo contenido
-                                educativo sobre Desarrollo Web en mi <a href="https://youtube.com/carpicoder"
-                                    target="_blank" aria-label="canal de YouTube (abre en una nueva pestaña)">canal de
-                                    YouTube</a>.
-                            </p>
+                            <p class="content-contact">Correo de contacto: <i class="fa-solid fa-envelope"></i> {
+                                <span><a class="mail" href=""
+                                        draggable="false">ocamporodriguezbrayan@gmail.com</a></span> } </p>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="rellax-not-centered scroll-icon-container" data-rellax-speed="3">
-                <a class="mouse-scroll-icon visible" id="scroll-down" href="#about-me" aria-hidden="true">
-                    <i class="fa-solid fa-circle-down"></i>
-                </a>
-            </div>
-        </section>
-
-
-        <!-- <section class="main-container">
-            <div class="main-container__about">
-                <div class="main-container__social">
-                    <a href="/views/portfolio.html" target="_blank"><i class="fa-solid fa-address-book fa-2xl"></i></a>
-                    <a href="https://www.linkedin.com/in/brayanocampo/" target="_blank"><i
-                            class="fa-brands fa-linkedin fa-2xl"></i></a>
-                    <a href="https://github.com/Brayan0campo" target="_blank"><i
-                            class="fa-brands fa-square-github fa-2xl"></i></a>
-                    <a href="#" target="_blank"><i class="fa-brands fa-square-dribbble fa-2xl"></i></a>
-                </div>
-                <div class="about-content">
-                    <div class="about-content__title">
-                        <img src="./assets/images/img-perfil1.png" alt="">
-                        <div>
-                            <h2>Hello I'm Brayan</h2>
-                            <h1>Frond End Developer /></h1>
-                            <div class="about-content__tools">
-                                <i class="fa-brands fa-html5 fa-2xl"></i>
-                                <i class="fa-brands fa-css3-alt fa-2xl"></i>
-                                <i class="fa-brands fa-sass fa-2xl"></i>
-                                <i class="fa-brands fa-js fa-2xl"></i> <i class="fa-brands fa-react fa-2xl"></i>
-                                <i class="fa-brands fa-git-alt fa-2xl"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="about-content__text">
-                        <p>
-                            ¡Ingeniero de Software en constante ascenso! Amante del aprendizaje y el crecimiento
-                            profesional. Domino HTML, CSS, JavaScript, React Js, Git, SQL y metodologías como Scrum.
-                            Espíritu colaborativo, resiliente ante la presión. ¡Dispuesto a llevar tu equipo a nuevas
-                            alturas!. Conoce mas en mi { portafolio }
-                        </p>
-                    </div>
-                    <div class="about-content__contact">
-                        <p>Correo de contacto: <i class="fa-solid fa-envelope"></i> { ocamporodriguezbrayan@gmail.com }
-                        </p>
+                    <div class="main-container__social">
+                        <a href="views/portfolio.html" draggable="false"><i
+                                class="fa-solid fa-address-book fa-2xl"></i></a>
+                        <a href="https://www.linkedin.com/in/brayanocampo/" target="_blank" draggable="false"><i
+                                class="fa-brands fa-linkedin fa-2xl"></i></a>
+                        <a href="https://github.com/Brayan0campo" target="_blank" draggable="false"><i
+                                class="fa-brands fa-square-github fa-2xl"></i></a>
+                        <a href="https://diamond-eris-3ee.notion.site/Jason-Chin-8c21973cdba7424eb92cb0185e40995b?pvs=4"
+                            id="notion" target="_blank" draggable="false">N</a>
                     </div>
                 </div>
             </div>
         </section> -->
     </main>
 
-    <footer>
-        <!--         <div class="footer-container">
+    <footer aria-label="Pie de página">
+        <div class="footer-container">
             <p>©2023 Brayan Ocampo | Made with ❤ in Medellin - Colombia</p>
-        </div> -->
+        </div>
     </footer>
 
     <script src="./js/portfolio/portfolio.js"></script>
-    </script>
+    <script src="./js/theme/theme-mode.js"></script>
 </body>
 
 </html>
