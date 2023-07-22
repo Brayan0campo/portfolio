@@ -415,4 +415,8 @@ body {
   text-align: center;
   font: bold 0.8125rem "Unbounded", sans-serif;
   color: #606060;
+}
+
+.container img {
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */
