@@ -23,49 +23,337 @@
             </ul>
         </nav>
         <div class="main-header__tools">
-            <a class="language-switch" href="./en" draggable="false" data-tooltip="Switch to English" data-tooltip-bottom aria-label="Switch to English"><i class="fa-solid fa-earth-americas fa-lg"></i></a>
-            <button class="theme-button" aria-hidden="true" data-tooltip="Tema" data-tooltip-bottom aria-label="Color de pagina"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></button>
+            <a class="language-switch" href="./en" draggable="false" data-tooltip="Switch to English"
+                data-tooltip-bottom aria-label="Switch to English"><i class="fa-solid fa-earth-americas fa-lg"></i></a>
+            <button class="theme-button" aria-hidden="true" data-tooltip="Tema" data-tooltip-bottom
+                aria-label="Color de pagina"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></button>
         </div>
     </header>
 
     <main aria-label="Contenido principal">
-       <!--  <section aria-label="Introducción">
-            <div class="main-container">
-                <div class="main-container__content">
-                    <div class="main-content">
-                        <div class="main-content__image">
-                            <div class="content-image">
-                                <img src="./assets/images/img-perfil1.webp" draggable="false" alt="Imagen de perfil">
-                            </div>
-                        </div>
-                        <div class="main-content__about">
-                            <p class="content-intro">¡Hola! Bienvenido</p>
-                            <p class="content-subtitle">Soy Brayan </p>
-                            <h1 class="content-title">Desarrollador Frontend /></h1>
-                            <p class="content-description">
-                                ¡Ingeniero de Software en constante ascenso! Amante del aprendizaje y el crecimiento
-                                profesional. Domino HTML, CSS, JavaScript, React Js, Git, SQL y metodologías como Scrum.
-                                Espíritu colaborativo, resiliente ante la presión. ¡Dispuesto a llevar tu equipo a
-                                nuevas alturas!. Conoce mas en mi { portafolio }
-                            </p>
-                            <p class="content-contact">Correo de contacto: <i class="fa-solid fa-envelope"></i> {
-                                <span><a class="mail" href=""
-                                        draggable="false">ocamporodriguezbrayan@gmail.com</a></span> } </p>
-                        </div>
+        <section class="section-hero" aria-label="Introducción">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="hero-content__about">
+                        <p class="content-intro">¡Hola! Bienvenido</p>
+                        <br>
+                        <p class="content-subtitle">Soy Brayan </p>
+                        <h1 class="content-title">Desarrollador Frontend /></h1>
+                        <br>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero ipsam reiciendis est quidem
+                            optio, assumenda aperiam aliquam earum, velit dolorum eaque ratione. Tenetur, magnam libero
+                            eos labore deleniti necessitatibus doloremque.
+                        </p>
+                        <br>
+                        <h3>Conoce mas en mi { portafolio }</h3>
                     </div>
-                    <div class="main-container__social">
-                        <a href="views/portfolio.html" draggable="false"><i
-                                class="fa-solid fa-address-book fa-2xl"></i></a>
-                        <a href="https://www.linkedin.com/in/brayanocampo/" target="_blank" draggable="false"><i
-                                class="fa-brands fa-linkedin fa-2xl"></i></a>
-                        <a href="https://github.com/Brayan0campo" target="_blank" draggable="false"><i
-                                class="fa-brands fa-square-github fa-2xl"></i></a>
-                        <a href="https://diamond-eris-3ee.notion.site/Jason-Chin-8c21973cdba7424eb92cb0185e40995b?pvs=4"
-                            id="notion" target="_blank" draggable="false">N</a>
-                    </div>
+                    <img src="../assets/images/img-perfil.png" draggable="false" alt="Imagen de perfil">
                 </div>
             </div>
-        </section> -->
+            <div class="scroll-container">
+                <a class="scroll-container__icon visible" id="scroll-down" href="#about-me" aria-hidden="true">
+                    <i class="fa-solid fa-caret-down"></i>
+                </a>
+            </div>
+        </section>
+
+
+
+        
+        <section aria-labelledby="about-me-title" id="about-me" class="section about-me">
+            <div class="container">
+                <h2 id="about-me-title" class="section-title type-mono rellax" data-rellax-speed="1" aria-label="Sobre mí">Sobre mí</h2>
+                <p class="paragraph">De 2014 a 2021 trabajé como <strong>Desarrollador Frontend</strong> en <span class="flag" aria-hidden="true">🇦🇷</span> Su Web Express, una de las agencias digitales líderes en Argentina. En 2019 creamos <span class="flag" aria-hidden="true">🇺🇾</span> Urutienda, donde trabajo como <strong>Desarrollador WordPress</strong> desde entonces.</p>
+                <p class="paragraph">En 2022 comencé a dar clases de Desarrollo Web en la academia digital Coderhouse. Además creé mi <a href="https://youtube.com/carpicoder" target="_blank" aria-label="canal de YouTube (abre en una nueva pestaña)">canal de YouTube</a> como un espacio en el que compartir contenido extra con mi alumnado, y evolucionó en lo que es hoy: un canal con muchos videos y cursos sobre HTML, CSS y JavaScript, llegando a <span id="subCountTotal">más de 2700</span> suscriptores.</p>
+                <p class="paragraph">Recientemente me trasladé a <span class="flag" aria-hidden="true">🇪🇸</span> España, en búsqueda de desafíos, oportunidades y nuevos proyectos.</p>
+                <p class="paragraph paragraph-mini">Ver información completa en mi <a href="https://linkedin.com/in/matiascoletta" target="_blank" aria-label="perfil de LinkedIn (abre en una nueva pestaña)">perfil de LinkedIn</a>.</p>
+
+                <ul class="skills-list" aria-labelledby="programming-languages-list-title">
+                    <h2 id="programming-languages-list-title" class="skills-titles">Skills</h2>
+                    <li class="skill">HTML5</li>
+                    <li class="skill">CSS3</li>
+                    <li class="skill">JavaScript</li>
+                    <li class="skill">React JS</li>
+                    <li class="skill">Bootstrap</li>
+                    <li class="skill">SASS & SCSS</li>
+                    <li class="skill">Git & GitHub</li>
+                    <li class="skill">JSON</li>
+                    <li class="skill">Firebase</li>
+                    <li class="skill">Fetch API</li>
+                    <li class="skill">Accesibilidad web</li>
+                    <li class="skill">Diseño responsivo</li>
+                </ul>
+
+                <ul class="skills-list" aria-labelledby="more-skills-list-title">
+                    <h2 id="more-skills-list-title" class="skills-titles">Software</h2>
+                    <li class="skill">Visual Studio Code</li>
+                    <li class="skill">FileZilla</li>
+                    <li class="skill">Adobe Photoshop</li>
+                    <li class="skill">Adobe Illustrator</li>
+                    <li class="skill">Adobe Premiere</li>
+                </ul>
+
+                <ul class="skills-list" aria-labelledby="languages-list-title">
+                    <h2 id="languages-list-title" class="skills-titles">Idiomas</h2>
+                    <li class="skill">Español (Nativo)</li>
+                    <li class="skill">Inglés (C2 Proficient)</li>
+                </ul>
+
+                <div class="section-footer" aria-hidden="true">
+                    <p>Sobre mí</p>
+                </div>
+            </div>
+        </section>
+
+        <section aria-labelledby="portfolio-title" id="portfolio" class="section portfolio">
+            <div class="container">
+                <h2 id="portfolio-title" class="section-title type-mono rellax" data-rellax-speed="1" aria-label="Portfolio">Portfolio</h2>
+                <p class="paragraph">De los cientos de proyectos en los que trabajé durante los últimos 9 años, aquí hay una selección de los más relevantes.</p>
+                <div class="projects-list">
+                    <article class="project" id="project-monotienda" aria-labelledby="title-monotienda">
+                        <div class="project-icons">
+                            <ion-icon aria-hidden="true" name="folder-outline"></ion-icon>
+                            <a target="_blank" href="https://github.com/carpistudio/monotienda-react" aria-label="Ver repositorio en GitHub (abre en una nueva pestaña)" data-tooltip="Ver repositorio"><ion-icon name="logo-github"></ion-icon>
+                            </a>
+                            <a target="_blank" href="https://monotienda-react.web.app" aria-label="Ver deploy (abre en una nueva pestaña)" data-tooltip="Ver deploy"><ion-icon name="link-outline"></ion-icon></a>
+                        </div>
+                        <h3 id="title-monotienda" class="project-title">Monotienda</h3>
+                        <p>E-commerce en React utilizando base de datos de Firebase.</p>
+                        <ul class="skills-list project-skills">
+                            <li class="skill">React</li>
+                            <li class="skill">SCSS</li>
+                            <li class="skill">Firebase</li>
+                        </ul>
+                    </article>
+                    <article class="project" id="project-carpishop" aria-labelledby="title-carpishop">
+                        <div class="project-icons">
+                            <ion-icon aria-hidden="true" name="folder-outline"></ion-icon>
+                            <a target="_blank" href="https://www.youtube.com/playlist?list=PL8VCLfCNXjSZiqgNULYZGlcveIm7O3Zco" aria-label="Ver video (abre en una nueva pestaña)" data-tooltip="Ver video"><ion-icon name="logo-youtube"></ion-icon></a>
+                            <a target="_blank" href="https://github.com/carpicoder/e-commerce-desde-cero" aria-label="Ver repositorio en GitHub (abre en una nueva pestaña)" data-tooltip="Ver repositorio"><ion-icon name="logo-github"></ion-icon>
+                            </a>
+                            <a target="_blank" href="https://carpicoder.github.io/e-commerce-desde-cero/resultado-final" aria-label="Ver deploy (abre en una nueva pestaña)" data-tooltip="Ver deploy"><ion-icon name="link-outline"></ion-icon></a>
+                            </a>
+                        </div>
+                        <h3 id="title-carpishop" class="project-title">CarpiShop</h3>
+                        <p>E-commerce interactivo en HTML, CSS y JavaScript, del cual subí algunos videos en YouTube.</p>
+                        <ul class="skills-list project-skills">
+                            <li class="skill">HTML</li>
+                            <li class="skill">CSS</li>
+                            <li class="skill">JavaScript</li>
+                            <li class="skill">JSON</li>
+                            <li class="skill">Fetch</li>
+                        </ul>
+                    </article>
+                    <article class="project" id="project-pokedex" aria-labelledby="title-pokedex">
+                        <div class="project-icons">
+                            <ion-icon aria-hidden="true" name="folder-outline"></ion-icon>
+                            <a target="_blank" href="https://youtu.be/EmxvMPcIy5c" aria-label="Ver video (abre en una nueva pestaña)" data-tooltip="Ver video"><ion-icon name="logo-youtube"></ion-icon></a>
+                            <a target="_blank" href="https://github.com/carpicoder/pokedex" aria-label="Ver repositorio en GitHub (abre en una nueva pestaña)" data-tooltip="Ver repositorio"><ion-icon name="logo-github"></ion-icon>
+                            </a>
+                            <a target="_blank" href="https://carpicoder.github.io/pokedex/resultado-final" aria-label="Ver deploy (abre en una nueva pestaña)" data-tooltip="Ver deploy"><ion-icon name="link-outline"></ion-icon></a>
+                        </div>
+                        <h3 id="title-pokedex" class="project-title">Pokédex</h3>
+                        <p>Pokédex interactiva con JavaScript y consumo de API con Fetch.</p>
+                        <ul class="skills-list project-skills">
+                            <li class="skill">HTML</li>
+                            <li class="skill">CSS</li>
+                            <li class="skill">JavaScript</li>
+                            <li class="skill">API</li>
+                            <li class="skill">Fetch</li>
+                        </ul>
+                    </article>
+                    <article class="project" id="project-piedra-papel-tijeras" aria-labelledby="title-piedra-papel-tijeras">
+                        <div class="project-icons">
+                            <ion-icon aria-hidden="true" name="folder-outline"></ion-icon>
+                            <a target="_blank" href="https://youtu.be/QZ6iJG1mQFM" aria-label="Ver video (abre en una nueva pestaña)" data-tooltip="Ver video"><ion-icon name="logo-youtube"></ion-icon></a>
+                            <a target="_blank" href="https://github.com/carpicoder/piedra-papel-o-tijera" aria-label="Ver repositorio en GitHub (abre en una nueva pestaña)" data-tooltip="Ver repositorio"><ion-icon name="logo-github"></ion-icon>
+                            </a>
+                            <a target="_blank" href="https://carpicoder.github.io/piedra-papel-o-tijera/resultado-final/" aria-label="Ver deploy (abre en una nueva pestaña)" data-tooltip="Ver deploy"><ion-icon name="link-outline"></ion-icon></a>
+                        </div>
+                        <h3 id="title-piedra-papel-tijeras" class="project-title">Piedra Papel Tijeras</h3>
+                        <p>Juego interactivo usando HTML, CSS y JS, enseñado en mi canal de YouTube.</p>
+                        <ul class="skills-list project-skills">
+                            <li class="skill">HTML</li>
+                            <li class="skill">CSS</li>
+                            <li class="skill">JavaScript</li>
+                        </ul>
+                    </article>
+                    <article class="project" id="project-del-bit-al-atomo" aria-labelledby="title-del-bit-al-atomo">
+                        <div class="project-icons">
+                            <ion-icon aria-hidden="true" name="folder-outline"></ion-icon>
+                            <a target="_blank" href="https://github.com/carpistudio/dbaa" aria-label="Ver repositorio en GitHub (abre en una nueva pestaña)" data-tooltip="Ver repositorio"><ion-icon name="logo-github"></ion-icon>
+                            </a>
+                            <a target="_blank" href="https://carpistudio.github.io/dbaa" aria-label="Ver deploy (abre en una nueva pestaña)" data-tooltip="Ver deploy"><ion-icon name="link-outline"></ion-icon></a>
+                        </div>
+                        <h3 id="title-del-bit-al-atomo" class="project-title">Del Bit Al Átomo</h3>
+                        <p>Proyecto freelance interactivo y con una estructura muy particular lograda con CSS Grid.</p>
+                        <ul class="skills-list project-skills">
+                            <li class="skill">HTML</li>
+                            <li class="skill">SCSS</li>
+                            <li class="skill">CSS Grid</li>
+                            <li class="skill">jQuery</li>
+                        </ul>
+                    </article>
+                    <article class="project" id="project-miletta" aria-labelledby="title-miletta">
+                        <div class="project-icons">
+                            <ion-icon aria-hidden="true" name="folder-outline"></ion-icon>
+                            <a target="_blank" href="https://github.com/carpistudio/milettacoder" aria-label="Ver repositorio en GitHub (abre en una nueva pestaña)" data-tooltip="Ver repositorio"><ion-icon name="logo-github"></ion-icon></a>
+                            <a target="_blank" href="https://carpistudio.github.io/milettacoder" aria-label="Ver deploy (abre en una nueva pestaña)" data-tooltip="Ver deploy"><ion-icon name="link-outline"></ion-icon></a>
+                        </div>
+                        <h3 id="title-miletta" class="project-title">Miletta Pastelería</h3>
+                        <p>Proyecto de sitio web estático en HTML + CSS para una pastelería en Buenos Aires.</p>
+                        <ul class="skills-list project-skills">
+                            <li class="skill">HTML</li>
+                            <li class="skill">CSS</li>
+                            <li class="skill">SCSS</li>
+                            <li class="skill">Bootstrap</li>
+                        </ul>
+                    </article>
+                </div>
+
+                <div class="section-footer" aria-hidden="true">
+                    <p>Portfolio</p>
+                </div>
+            </div>
+        </section>
+
+        <section aria-labelledby="career-title" id="career" class="section career">
+            <div class="container">
+                <h2 id="career-title" class="section-title type-mono rellax" data-rellax-speed="1" aria-label="Experiencia">Experiencia</h2>
+
+                <div class="jobs-list" aria-label="Trabajos">
+
+                    <article class="job" aria-labelledby="coderhouse-title">
+                        <div class="job-company">
+                            <h3 class="company-title" id="coderhouse-title">Coderhouse</h3>
+                            <a
+                                target="_blank"
+                                href="https://coderhouse.com"
+                                class="company-link"
+                                data-tooltip="Ver sitio web"
+                                aria-label="Ver sitio web (abre en una nueva pestaña)"
+                            >
+                                <ion-icon name="link-outline"></ion-icon>
+                            </a>
+                        </div>
+                        <p class="company-type">Academia digital</p>
+                        <ul class="roles" aria-label="Roles">
+                            <li class="role">
+                                <p class="title">Profesor en HTML, CSS y JavaScript</p>
+                                <p class="date">Dic. 2022 - Actualidad</p>
+                            </li>
+                            <li class="role">
+                                <p class="title">Coordinador de tutores</p>
+                                <p class="date">Nov. 2022 - Actualidad</p>
+                            </li>
+                            <li class="role">
+                                <p class="title">Tutor en HTML, CSS, JavaScript y React JS</p>
+                                <p class="date">May. 2022 - Actualidad</p>
+                            </li>
+                        </ul>
+                    </article>
+
+                    <article class="job" aria-labelledby="carpi-coder-title">
+                        <div class="job-company">
+                            <h3 class="company-title" id="carpi-coder-title">Carpi Coder</h3>
+                            <div>
+                                <a
+                                    target="_blank"
+                                    href="https://carpicoder.com"
+                                    class="company-link"
+                                    data-tooltip="Ver sitio web"
+                                    aria-label="Ver sitio web (abre en una nueva pestaña)"
+                                >
+                                    <ion-icon name="link-outline"></ion-icon>
+                                </a>
+                                <a
+                                    target="_blank"
+                                    href="https://youtube.com/carpicoder"
+                                    class="company-link"
+                                    data-tooltip="Ver canal"
+                                    aria-label="Ver canal (abre en una nueva pestaña)"
+                                >
+                                    <ion-icon name="logo-youtube"></ion-icon>
+                                </a>
+                            </div>
+                        </div>
+                        <p class="company-type">Agencia freelance</p>
+                        <ul class="roles" aria-label="Roles">
+                            <li class="role">
+                                <p class="title">Contenido educativo en YouTube</p>
+                                <p class="date">Jul. 2022 - Actualidad</p>
+                            </li>
+                            <li class="role">
+                                <p class="title">Clases privadas</p>
+                                <p class="date">Jul. 2022 - Actualidad</p>
+                            </li>
+                            <li class="role">
+                                <p class="title">Proyectos freelance</p>
+                                <p class="date">Jun. 2021 - Actualidad</p>
+                            </li>
+                        </ul>
+                    </article>
+
+                    <article class="job" aria-labelledby="urutienda-title">
+                        <div class="job-company">
+                            <h3 class="company-title" id="urutienda-title">Urutienda</h3>
+                            <a
+                                target="_blank"
+                                href="https://urutienda.com"
+                                class="company-link"
+                                data-tooltip="Ver sitio web"
+                                aria-label="Ver sitio web (abre en una nueva pestaña)"
+                            >
+                                <ion-icon name="link-outline"></ion-icon>
+                            </a>
+                        </div>
+                        <p class="company-type">Agencia digital</p>
+                        <ul class="roles" aria-label="Roles">
+                            <li class="role">
+                                <p class="title">Supervisor de Help Desk</p>
+                                <p class="date">Abr. 2020 - Actualidad</p>
+                            </li>
+                            <li class="role">
+                                <p class="title">Desarrollador WordPress</p>
+                                <p class="date">Abr. 2020 - Actualidad</p>
+                            </li>
+                        </ul>
+                    </article>
+
+                    <article class="job" aria-labelledby="su-web-express-title">
+                        <div class="job-company">
+                            <h3 class="company-title" id="su-web-express-title">Su Web Express</h3>
+                            <a
+                                target="_blank"
+                                href="https://suwebexpress.com.ar"
+                                class="company-link"
+                                data-tooltip="Ver sitio web"
+                                aria-label="Ver sitio web (abre en una nueva pestaña)"
+                            >
+                                <ion-icon name="link-outline"></ion-icon>
+                            </a>
+                        </div>
+                        <p class="company-type">Agencia digital</p>
+                        <ul class="roles" aria-label="Roles">
+                            <li class="role">
+                                <p class="title">Project Leader</p>
+                                <p class="date">Sep. 2018 - Jun. 2022</p>
+                            </li>
+                            <li class="role">
+                                <p class="title">Desarrollador Frontend</p>
+                                <p class="date">Abr. 2014 - Jun. 2022</p>
+                            </li>
+                        </ul>
+                    </article>
+
+
+                </div>
+
+                <div class="section-footer" aria-hidden="true">
+                    <p>Experiencia</p>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer aria-label="Pie de página">

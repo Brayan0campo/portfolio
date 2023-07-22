@@ -34,3 +34,19 @@
         visibility: visible;
     }
 }
+
+[data-tooltip][data-tooltip-left]::after {
+    bottom: unset;
+    left: unset;
+    transform: translateX(-2rem);
+    right: 100%;
+}
+
+@media (hover: hover) {
+    [data-tooltip][data-tooltip-left]:hover::after {
+        bottom: unset;
+        left: unset;
+        transform: translateX(0);
+        right: 100%;
+    }
+}
