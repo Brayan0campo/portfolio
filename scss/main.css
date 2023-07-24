@@ -252,10 +252,11 @@ body {
   inset: 0;
   font-size: 3rem;
   position: fixed;
-  transition: 0.3s;
+  transition: 0.2s;
   color: #F5F5F5;
   z-index: 99999999;
   background-color: #1C1C1C;
+  border: none;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -276,68 +277,9 @@ body {
   justify-content: space-evenly;
   padding-block: 1rem;
 }
-.hero-container .hero-content__about {
-  display: flex;
-  flex-direction: column;
-  margin-right: 100px;
-}
-.hero-container .hero-content__about p {
-  text-align: justify;
-}
-.hero-container .hero-content__about .content-intro {
-  font-family: "Rubik", sans-serif;
-  background-color: #5EEAA6;
-  background-image: url("../assets/images/bg-noise.png");
-  color: #1C1C1C;
-  width: -moz-max-content;
-  width: max-content;
-  font-weight: 600;
-  font-size: 1rem;
-  padding: 0.25rem 0.75rem;
-  border-radius: 0.5rem;
-}
-.hero-container .hero-content__about .content-intro::-moz-selection {
-  background-color: #F5F5F5;
-  color: #1C1C1C;
-}
-.hero-container .hero-content__about .content-intro::selection {
-  background-color: #F5F5F5;
-  color: #1C1C1C;
-}
 .hero-container .hero-content img {
   filter: brightness(0%);
   max-width: 50%;
-}
-
-.scroll-container__icon {
-  position: absolute;
-  bottom: 2rem;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 2rem;
-  color: #606060;
-  animation-name: scroll-icon;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-timing-function: cubic-bezier(0.075, 0.82, 2, 2);
-  animation-delay: 0;
-  animation-direction: normal;
-  transition: 0.3s;
-}
-.scroll-container__icon:not(.visible) {
-  opacity: 0;
-  visibility: hidden;
-}
-@keyframes scroll-icon {
-  0% {
-    transform: translateY(0) translateX(-50%);
-  }
-  75% {
-    transform: translateY(-1rem) translateX(-50%);
-  }
-  100% {
-    transform: translateY(0) translateX(-50%);
-  }
 }
 
 .footer-container {

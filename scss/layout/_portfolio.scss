@@ -10,73 +10,9 @@
         justify-content: space-evenly;
         padding-block: 1rem;
 
-        &__about {
-            display: flex;
-            flex-direction: column;
-            margin-right: 100px;
-
-            p {
-                text-align: justify;
-            }
-
-            .content-intro {
-                font-family: $ff-text;
-                background-color: $clr-details;
-                background-image: url("../assets/images/bg-noise.png");
-                color: $clr-bg;
-                width: max-content;
-                font-weight: 600;
-                font-size: 1rem;
-                padding: .25rem .75rem;
-                border-radius: .5rem;
-
-                &::selection {
-                    background-color: $clr-text;
-                    color: $clr-bg;
-                }
-            }
-        }
-
         img {
             filter: brightness(0%);
             max-width: 50%;
-        }
-    }
-}
-
-.scroll-container {
-    &__icon {
-        position: absolute;
-        bottom: 2rem;
-        left: 50%;
-        transform: translateX(-50%);
-        font-size: 2rem;
-        color: $clr-gray;
-        animation-name: scroll-icon;
-        animation-duration: 2s;
-        animation-iteration-count: infinite;
-        animation-timing-function: cubic-bezier(0.075, 0.82, 2, 2);
-        animation-delay: 0;
-        animation-direction: normal;
-        transition: .3s;
-
-        &:not(.visible) {
-            opacity: 0;
-            visibility: hidden;
-        }
-
-        @keyframes scroll-icon {
-            0% {
-                transform: translateY(0) translateX(-50%);
-            }
-
-            75% {
-                transform: translateY(-1rem) translateX(-50%);
-            }
-
-            100% {
-                transform: translateY(0) translateX(-50%);
-            }
         }
     }
 }
