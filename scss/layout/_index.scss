@@ -111,7 +111,6 @@
 .load-page {
     inset: 0;
     position: fixed;
-    background-color: $clr-bg;
     color: $clr-text;
     z-index: 99999999;
     font-size: 3rem;
@@ -119,6 +118,7 @@
     align-items: center;
     justify-content: center;
     transition: .4s;
+    background-color: $clr-bg;
 
     .fa-solid {
         pointer-events: none;
