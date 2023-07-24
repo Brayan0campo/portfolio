@@ -263,31 +263,18 @@ body {
 
 .load-page {
   inset: 0;
+  font-size: 3rem;
   position: fixed;
+  transition: 0.3s;
   color: #F5F5F5;
   z-index: 99999999;
-  font-size: 3rem;
+  background-color: #1C1C1C;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: 0.4s;
-  background-color: #1C1C1C;
 }
-.load-page .fa-solid {
-  pointer-events: none;
-  animation: spin 1s ease-in-out both infinite;
-  animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-}
-@keyframes spin {
-  0% {
-    transform: rotate(0);
-  }
-  50% {
-    transform: rotate(360deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+.load-page video {
+  width: 62.5rem;
 }
 
 .hero-container {

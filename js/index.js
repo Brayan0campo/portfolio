@@ -8,9 +8,9 @@ document.onreadystatechange = function() {
             document.querySelector(".load-page").style.visibility = "hidden";
             document.querySelector(".load-page").style.opacity = "0";
             document.querySelector(".load-page").style.transform = "translateY(100%)";
-        }, 1700);
+        }, 3700);
         setTimeout(() => {
             document.querySelector(".load-page").style.display = "none";
-        }, 4000);
+        }, 7000);
     }
 };
