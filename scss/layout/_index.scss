@@ -53,6 +53,10 @@
                 text-align: justify;
                 margin-bottom: 1.5625rem;
                 font: normal 500 .8125em $ff-title, sans-serif;
+
+                .link {
+                    color: $clr-details;
+                }
             }
 
             &__contact {
