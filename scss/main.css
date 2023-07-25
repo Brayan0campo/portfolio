@@ -186,27 +186,27 @@ body {
   width: max-content;
   border-radius: 0.2rem;
   padding: 0.25rem 0.75rem;
-  font: normal bold 1em/1.3 "Rubik", sans-serif, sans-serif;
+  font: normal bold 1em/1.3 "Rubik", sans-serif;
   background: #5EEAA6 url("../../assets/images/bg-noise.png") no-repeat;
 }
 .main-container__content .content-about__title {
   color: #5EEAA6;
   margin-bottom: 1rem;
-  font: normal bold 2.2em "Unbounded", sans-serif, sans-serif;
+  font: normal bold 2.2em "Unbounded", sans-serif;
 }
 .main-container__content .content-about__subtitle {
-  font: normal 600 2.6em/1.3 "Unbounded", sans-serif, sans-serif;
+  font: normal 600 2.6em/1.3 "Unbounded", sans-serif;
 }
 .main-container__content .content-about__description {
   text-align: justify;
   margin-bottom: 1.5625rem;
-  font: normal 500 0.8125em "Unbounded", sans-serif, sans-serif;
+  font: normal 500 0.8125em "Unbounded", sans-serif;
 }
 .main-container__content .content-about__description .link {
   color: #5EEAA6;
 }
 .main-container__content .content-about__contact {
-  font: normal 0.875em "Unbounded", sans-serif, sans-serif;
+  font: normal 0.875em "Unbounded", sans-serif;
 }
 .main-container__content .content-about__contact .mail {
   padding: 0 0.4rem;
@@ -218,7 +218,7 @@ body {
   color: #606060;
   text-align: center;
   position: absolute;
-  font: normal bold 0.8125em "Unbounded", sans-serif, sans-serif;
+  font: normal bold 0.8125em "Unbounded", sans-serif;
 }
 .main-container__social {
   text-align: center;
@@ -240,7 +240,7 @@ body {
   width: 1.8125rem;
   margin-left: 1.125rem;
   border-radius: 0.125rem;
-  font: normal bold 1.4375em "Rubik", sans-serif, sans-serif;
+  font: normal bold 1.4375em "Rubik", sans-serif;
   background: #F5F5F5 url("../../assets/images/bg-noise.png") no-repeat;
 }
 .main-container__social #notion:hover {
