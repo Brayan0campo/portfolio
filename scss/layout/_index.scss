@@ -22,7 +22,7 @@
             img {
                 max-width: 100%;
                 border-radius: 1rem;
-                transform: scale(1.2) translateX(-0.13rem) translateY(-1.1rem);
+                transform: scale(1.26) translateX(-0.13rem) translateY(-1.5rem);
             }
         }
 
@@ -114,19 +114,16 @@
 
 .load-page {
     inset: 0;
-    font-size: 3rem;
     position: fixed;
     transition: .2s;
-    color: $clr-text;
     z-index: 99999999;
     background-color: $clr-bg;
-    border: none;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
-    video {
-        width: 62.5rem;
+    img {
+        width: 100%;
     }
 }

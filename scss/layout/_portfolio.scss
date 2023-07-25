@@ -1,20 +1,9 @@
-.hero-container {
-    max-width: 62.5rem;
-    margin: 0 auto;
-    padding-inline: 1.5rem;
+.section-hero {
 
-    .hero-content {
-        min-height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        padding-block: 1rem;
-
-        img {
-            filter: brightness(0%);
-            max-width: 50%;
-        }
+    img {
+        width: 100%;
     }
+
 }
 
 .footer-container {
@@ -35,4 +24,3 @@
         width: 100%;
     }
 }
-

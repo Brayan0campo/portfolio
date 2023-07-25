@@ -25,9 +25,8 @@
         }
 
         ul>li>a {
-            font: bold .875rem $ff-roboto;
-            color: $clr-text;
-            font-weight: bold;
+            font: normal bold 14px $ff-roboto, sans-serif;
+            color: $clr-gray;
             transition: color .2s;
             display: flex;
 
